@@ -1,8 +1,13 @@
-*{
+* {
     margin: 0;
 }
+
 body {
-    background-color: rgb(73, 73, 73);
+    /* Created with https://www.css-gradient.com */
+    background: #1E3235;
+    background: -webkit-radial-gradient(right, #1E3235, #484895);
+    background: -moz-radial-gradient(right, #1E3235, #484895);
+    background: radial-gradient(to left, #1E3235, #484895);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,11 +17,16 @@ body {
 
 
 .container {
+    /* Created with https://www.css-gradient.com */
+    background: #162C3B;
+    background: -webkit-linear-gradient(top left, #162C3B, #111C45);
+    background: -moz-linear-gradient(top left, #162C3B, #111C45);
+    background: linear-gradient(to bottom right, #162C3B, #111C45);
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 6px;
     width: 500px;
     height: 250px;
-    box-shadow: rgba(242, 240, 240, 0.4) 0px 2px 4px, rgb(151, 150, 150) 0px 7px 13px -3px, rgba(171, 162, 162, 0.2) 0px -3px 0px inset;
+    box-shadow: #162C3B 0px 2px 4px, #162C3B 0px 7px 13px -3px, #162C3B 0px -3px 0px inset;
 }
 
 .tempo {
@@ -29,29 +39,55 @@ button {
     border-radius: 10px;
     border: 0;
     cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(127, 128, 129);
     color: aliceblue;
 }
 
-.butoes {
+.botoes {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin-top: 5px;
+
 }
 
-.tempo{
+.tempo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1{
+h1 {
     margin: 8px;
     color: white;
     font-size: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@media only screen and (max-width: 500px){
+    .container{
+        width: 400px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    
+}
+
+@media only screen and (max-width: 430px){
+    .container{
+        width: 300px;
+    }
+    h1{
+        font-size: 30px;
+    }
+
+    button{
+        padding: 7px 20px 7px 20px;
+    }
 }
